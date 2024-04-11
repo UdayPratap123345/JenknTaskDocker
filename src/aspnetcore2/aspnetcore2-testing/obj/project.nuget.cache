@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "rfP9un+sJDSYcWP+qqzdq09FuUF5Gb2TjkzriNfzftF0Gtcj17pgLXpNOu9tQl9B80XtyWeGgknipyzkB7tBgA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\udaysingh01\\OneDrive - Nagarro\\Desktop\\JenkinTask3\\src\\aspnetcore2\\aspnetcore2-testing\\aspnetcore2-testing.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\udaysingh01\\.nuget\\packages\\mstest.testframework\\3.3.1\\mstest.testframework.3.3.1.nupkg.sha512"
+  ],
+  "logs": []
+}

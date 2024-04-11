@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.34601.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "aspnetcore2", "aspnetcore2\aspnetcore2.csproj", "{BC82B5B1-4B85-43AA-8C99-307B15CBA3B9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "aspnetcore2-testing", "aspnetcore2-testing\aspnetcore2-testing.csproj", "{FA3953CE-5382-43B3-B7BA-DFE35C1BF933}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BC82B5B1-4B85-43AA-8C99-307B15CBA3B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC82B5B1-4B85-43AA-8C99-307B15CBA3B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC82B5B1-4B85-43AA-8C99-307B15CBA3B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC82B5B1-4B85-43AA-8C99-307B15CBA3B9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA3953CE-5382-43B3-B7BA-DFE35C1BF933}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA3953CE-5382-43B3-B7BA-DFE35C1BF933}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA3953CE-5382-43B3-B7BA-DFE35C1BF933}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA3953CE-5382-43B3-B7BA-DFE35C1BF933}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {30A95321-FCC8-4B0C-B66A-E3D95DDD60A9}
+	EndGlobalSection
+EndGlobal
