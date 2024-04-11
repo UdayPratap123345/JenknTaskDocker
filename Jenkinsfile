@@ -36,7 +36,7 @@ pipeline {
                 script {
                     // Login to Docker Hub (or your Docker registry)
                     // Make sure to set your credentials in Jenkins credential store
-                    docker.withRegistry('https://hub.docker.com/repository/docker/udaysingh01/jenkinstask/general', 'docker_login') {
+                    docker.withRegistry('https://index.docker.io/v1/', 'docker_login') {
                         // Push your Docker image
                         docker.image("${IMAGE_NAME}:${IMAGE_TAG}").push()
                     }
