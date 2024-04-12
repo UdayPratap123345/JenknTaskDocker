@@ -38,7 +38,7 @@ pipeline {
                     // Make sure to set your credentials in Jenkins credential store
                     docker.withRegistry('https://index.docker.io/v1/', 'docker_login') {
                         // Push your Docker image
-                            bat "docker push IMAGE_NAME:latest"                    }
+                            docker.image("${IMAGE_NAME}:${IMAGE_TAG}").push()                   }
                 }
             }
         }
