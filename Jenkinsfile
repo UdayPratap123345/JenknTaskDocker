@@ -3,8 +3,6 @@ pipeline {
     environment {
         IMAGE_NAME = 'udaysingh01/devopstrainingdotnet'
         IMAGE_TAG = 'latest'
-        DOCKER_PORT = '8081'
-        CONTAINER_NAME = 'my_new_container' // Change the container name
     }
 
     stages {
@@ -47,8 +45,9 @@ pipeline {
         stage('Run Docker Container') {
             steps {
                 script {
-                    // Run the Docker container
-                    docker.image("${IMAGE_NAME}:${IMAGE_TAG}").run("-d -p ${DOCKER_PORT}:80 --name ${CONTAINER_NAME}")
+                    sh 'docker rm -f ${IMAGE_NAME} || true'
+                    // Run the new container
+                    sh "docker run -d --name aspnetcore2 -p 8000:80 ${IMAGE_NAME}:${IMAGE_TAG}"
                 }
             }
         }
