@@ -42,5 +42,13 @@ pipeline {
                 }
             }
         }
+        stage('Run Docker Container') {
+            steps {
+                script {
+                    // Run the Docker container
+                    docker.image("${IMAGE_NAME}:${IMAGE_TAG}").run('-p 8080:80 --name my_container')
+                }
+            }
+        }
     }
 }
