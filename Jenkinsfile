@@ -3,6 +3,8 @@ pipeline {
     environment {
         IMAGE_NAME = 'udaysingh01/devopstrainingdotnet'
         IMAGE_TAG = 'latest'
+        DOCKER_PORT = '8081'
+        CONTAINER_NAME = 'my_new_container' // Change the container name
     }
 
     stages {
@@ -46,7 +48,7 @@ pipeline {
             steps {
                 script {
                     // Run the Docker container
-                    docker.image("${IMAGE_NAME}:${IMAGE_TAG}").run('-p 8081:80 --name my_container')
+                    docker.image("${IMAGE_NAME}:${IMAGE_TAG}").run("-d -p ${DOCKER_PORT}:80 --name ${CONTAINER_NAME}")
                 }
             }
         }
